@@ -35,13 +35,9 @@ const PRODUCTOS_CON_PRECIOS = [
   {id: '24', nombre: 'Agua con Gas 600ml', categoria: 'Bebestibles', precios: [{local: 'Kiosko Central', precio: 900}, {local: 'Casino', precio: 1000}, {local: 'Cafetería B', precio: 900},], image: require('../assets/images/cachantun_cg.jpg'), },
   {id: '25', nombre: 'Agua con Gas 600ml', categoria: 'Bebestibles', precios: [{local: 'Kiosko Central', precio: 900}, {local: 'Casino', precio: 1000}, {local: 'Cafetería B', precio: 900},], image: require('../assets/images/strongas.jpg'), },
   {id: '15', nombre: 'Agua sin Gas 600ml', categoria: 'Bebestibles', precios: [{local: 'Kiosko Central', precio: 850}, {local: 'Casino', precio: 950},], image: require('../assets/images/coca_cola.jpg'), },
-  {id: '16', nombre: 'Media Luna', categoria: 'Dulceria', precios: [{local: 'Casino', precio: 800}, {local: 'Cafetería B', precio: 750},], image: require('../assets/images/empanada_pino.jpg'), },
-  {id: '17', nombre: 'Dona Glaseada', categoria: 'Dulceria', precios: [{local: 'Kiosko Central', precio: 1100}, {local: 'Casino', precio: 1100},], image: require('../assets/images/empanada_pino.jpg'), },
-  {id: '18', nombre: 'Mendozino Italiano', categoria: 'Sandwich', precios: [{local: 'Cafetería B', precio: 3100},], image: require('../assets/images/empanada_pino.jpg'), },
-  {id: '19', nombre: 'Almuerzo Vegetariano', categoria: 'Almuerzos', precios: [{local: 'Casino', precio: 3700}, {local: 'Cafetería B', precio: 3900},], image: require('../assets/images/empanada_pino.jpg'), },
-  {id: '20', nombre: 'Té/Infusión', categoria: 'Bebestibles', precios: [{local: 'Kiosko Central', precio: 600}, {local: 'Casino', precio: 700}, {local: 'Cafetería B', precio: 650},], image: require('../assets/images/coca_cola.jpg'), },
-  {id: '21', nombre: 'Barra de Cereal', categoria: 'Dulceria', precios: [{local: 'Kiosko Central', precio: 950},], image: require('../assets/images/empanada_pino.jpg'), },
-  {id: '22', nombre: 'Bebida Isotónica 500ml', categoria: 'Bebestibles', precios: [{local: 'Kiosko Central', precio: 1400}, {local: 'Casino', precio: 1500},], image: require('../assets/images/coca_cola.jpg'), },
+  {id: '16', nombre: 'Media Luna', categoria: 'Dulceria', precios: [{local: 'Casino', precio: 800}, {local: 'Cafetería B', precio: 750},], image: require('../assets/images/media_luna.jpg'), },
+  {id: '17', nombre: 'Dona Glaseada', categoria: 'Dulceria', precios: [{local: 'Kiosko Central', precio: 1100}, {local: 'Casino', precio: 1100},], image: require('../assets/images/dona_glaseada.jpg'), },
+  {id: '18', nombre: 'Mendozino Italiano', categoria: 'Sandwich', precios: [{local: 'Cafetería B', precio: 3100},], image: require('../assets/images/mendozino.jpg'), },
 ];
 const CATEGORIAS = ['Todo', 'Empanadas', 'Almuerzos', 'Bebestibles', 'Sandwich', 'Dulceria'];
 
