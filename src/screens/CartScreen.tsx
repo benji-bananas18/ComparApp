@@ -44,6 +44,10 @@ const CartScreen = ({navigation}: {navigation: any}) => {
   );
 
   // Renderiza el carrito completo de un solo local
+// src/screens/CartScreen.tsx
+// ... (resto del código y imports) ...
+
+  // Renderiza el carrito completo de un solo local
   const renderLocalCart = (localName: string) => {
     const cartItems = carts[localName];
     const localTotal = cartItems.reduce((sum, item) => sum + item.precio * item.quantity, 0);
@@ -62,20 +66,22 @@ const CartScreen = ({navigation}: {navigation: any}) => {
           data={cartItems}
           renderItem={renderItem}
           keyExtractor={item => item.id}
-          scrollEnabled={false} // Deshabilitamos scroll en listas anidadas
+          scrollEnabled={false} 
         />
         
         <View style={styles.localFooter}>
             <Text style={styles.localTotalText}>Subtotal {localName}: ${localTotal.toLocaleString('es-CL')}</Text>
             <Button
                 title={`Pagar en ${localName} (Generar QR)`}
-                onPress={() => navigation.navigate('QRScreen')} 
+                // --- CAMBIO CLAVE AQUÍ: Pasamos el nombre del local ---
+                onPress={() => navigation.navigate('QRScreen', { localName: localName })} 
                 color="#FFA500"
             />
         </View>
       </View>
     );
   };
+// ... (resto del código y estilos) ...
 
 
   return (
