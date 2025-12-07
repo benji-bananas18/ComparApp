@@ -23,7 +23,13 @@ debugpy==1.8.17
 decorator==5.2.1
 defusedxml==0.7.1
 Django==5.1.3
+# Librería para servir estáticos y gestionar la DB en producción
 django-storages==1.14.6
+# dj-database-url: CRÍTICO para leer la variable DATABASE_URL en Render
+dj-database-url==1.2.0 
+# Gunicorn (Servidor de producción, debes instalarlo si no lo tienes)
+gunicorn==22.0.0
+
 executing==2.2.1
 fastjsonschema==2.21.2
 fonttools==4.60.1
@@ -54,7 +60,7 @@ jupyter_core==5.8.1
 jupyter_server==2.17.0
 jupyter_server_terminals==0.5.3
 jupyterlab==4.4.9
-jupyterlab_pygments==0.3.0
+jupyterlab_pygments==0.3.0as
 jupyterlab_server==2.27.3
 jupyterlab_widgets==3.0.15
 kiwisolver==1.4.9
@@ -63,7 +69,7 @@ MarkupSafe==3.0.3
 matplotlib==3.10.6
 matplotlib-inline==0.1.7
 mistune==3.1.4
-mysql==0.0.3
+# ELIMINADO: mysql==0.0.3 (Obsoleto, puede causar conflictos)
 mysqlclient==2.2.5
 narwhals==2.6.0
 nbclient==0.10.2
@@ -90,7 +96,7 @@ pyparsing==3.2.5
 python-dateutil==2.9.0.post0
 python-json-logger==3.3.0
 pytz==2025.2
-pywin32==311
+# ELIMINADO: pywin32==311 (Incompatible con Linux/Render)
 pywinpty==3.0.0
 PyYAML==6.0.3
 pyzmq==27.1.0
